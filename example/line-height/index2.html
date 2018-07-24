@@ -1,0 +1,28 @@
+<!-- html5 doctype 声明之下 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dib-baseline {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #cad5eb;
+            background-color: #f0f3f9;
+        }
+    </style>
+</head>
+<!-- 1. 让vertical-align失效
+图片默认是inline水平的，而vertical-align对块状水平的元素无感。因此，我们只要让图片display水平为block就可以了，我们可以直接设置display或者浮动、绝对定位等（如果布局允许）。例如： -->
+
+<body>
+    <span class="dib-baseline"></span>
+    <span class="dib-baseline" style="line-height: 0px;">x-baseline</span>
+</body>
+
+</html>
